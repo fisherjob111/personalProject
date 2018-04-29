@@ -17,7 +17,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   //__dirname is the directory in nodeJS, useful for building paths
-  res.sendFile(__dirname + '/public/ui/login.html');
+  res.sendFile(__dirname + '/ui/home.html');
   }
 );
 

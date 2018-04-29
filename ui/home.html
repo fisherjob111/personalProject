@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Homepage</title>
+    </head>
+    <body>
+      <div id = 'wholePage'>
+
+      <div class = 'header'>
+      <p id = 'welcomeMessage'> Welcome to Homepage </p>
+        </div>
+      <div>
+
+        <!-- This is the div for your stats -->
+        <div id = 'summary' class = 'statusbar' >
+
+            <div class = 'column' style={width:30%} >
+              Feed
+
+            </div>
+
+
+            <div class = 'column'>
+              Squad
+                <div id= 'characters'> </div>
+            </div>
+
+
+            <div class = 'column'>
+              Resources
+            </div>
+        </div>
+
+        <div id = 'actionBar'>
+            <button> Click me to pull characters </button>
+        </div>
+
+    </div>
+    </body>
+</html>
+
+
+<script>
+
+
+
+</script>
+
+
+<style>
+#summary {
+display:inline-flex;
+width: 100%;
+height: 400px;
+border:solid;
+
+}
+div.column {
+width: 33%;
+border: 2px;
+border-width: 2px;
+border-style : dashed;
+}
+#spacer {
+  width: 10%;
+}
+
+.statusbar {
+  background-color: grey;
+  text-align: center;
+}
+
+#wholePage {
+  background-color: #AA4B39
+}
+
+#welcomeMessage{
+  text-align: center;
+  font-size: 45px;
+  margin-top: 10px;
+
+
+
+}
+</style>
