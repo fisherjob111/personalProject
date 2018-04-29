@@ -42,7 +42,22 @@
 
 <script>
 
+function updateFromSave () {
+  console.log(this.responseText);
+  var parse = JSON.parse(this.responseText);
+  debugger;
+  document.getElementById('welcomeMessage').innerHTML = parse.profile.factionName
+}
 
+
+function loadPage () {
+  var oReq = new XMLHttpRequest();
+  oReq.addEventListener("load", updateFromSave);
+  oReq.open("GET", "./loadSave");
+  oReq.send();
+}
+
+loadPage();
 
 </script>
 

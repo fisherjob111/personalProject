@@ -49,6 +49,15 @@ res.send(user);
 
 });
 
+app.get('/loadSave',(req,res) => {
+  fs.readFile('./save.json', 'utf8', (err, data) => {
+    if (err) throw err;
+    console.log('Sending JSONString of SavedData');
+    res.send(data);
+  });
+
+});
+
 
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
