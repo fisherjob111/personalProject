@@ -3,7 +3,7 @@
 var user = {};
 
 user.profile ={};
-  user.profile.name = "User's Name";
+  user.profile.factionName = "User's Name";
 
 user.squad  = [];
 
