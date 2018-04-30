@@ -4,13 +4,15 @@ var user = {};
 
 user.profile ={};
   user.profile.factionName = "User's Name";
-
+  user.profile.background = 'Background String'
+    //Military, Bandit, Rogue, Criminal
 user.squad  = [];
 
   //Sample Squad Member
 
   squadMember = {};
     squadMember.name = 'Soldier Name'
+    squadMember.description = 'Soldier Description'
     squadMember.weapon = 'Gun Name';
     squadMember.status = 'Health Status';
     squadMember.traits = [];

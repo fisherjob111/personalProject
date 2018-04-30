@@ -17,22 +17,40 @@
         <!-- This is the div for your stats -->
         <div id = 'summary' class = 'statusbar' >
 
-            <div class = 'column' style={width:30%} >
+            <div id = 'feedTab' class = 'column header' >
               Feed
 
             </div>
 
 
-            <div class = 'column'>
+            <div id = 'squadTab' class = 'column header'>
               Squad
-                <div id= 'characters'> </div>
             </div>
 
 
-            <div class = 'column'>
-              Resources
+            <div id = 'baseTab' class = 'column header'>
+              Base Information
+
+              <div class = 'columnData'>
+
+
+                <div id= 'campDescription' style = 'font-size:11px;'>
+                  CAMPN NAME -- CAMP DETAILS
+
+                </div>
+
+                <div style = 'border-style: solid; border-width : 2px; margin-top:5px'>
+                  <img src ='/img/cash.png' style = 'Width:15%;float:left;margin-right:20px'> </img>
+                  <p id='cashReserve'> Cash Amount </p>
+
+                </div>
+
+
+
+
+              </div>
             </div>
-        </div>
+        </div> <!-- Summary Tabs -->
 
 
 
@@ -43,9 +61,7 @@
 <script>
 
 function updateFromSave () {
-  console.log(this.responseText);
   var parse = JSON.parse(this.responseText);
-  debugger;
   document.getElementById('welcomeMessage').innerHTML = parse.profile.factionName
 }
 
@@ -94,8 +110,11 @@ border-style : dashed;
   text-align: center;
   font-size: 45px;
   margin-top: 10px;
+}
 
-
+.columnData {
+  text-align:left;
+}
 
 }
 </style>

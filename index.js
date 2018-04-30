@@ -31,12 +31,6 @@ app.get('/createProfile', (req,res) => {
  user.profile = {};
  user.profile.factionName = generator.generateFaction();
 
-/*
- fs.readFile('./save.json', 'utf8', (err, data) => {
-   if (err) throw err;
-   console.log(data);
- });
-*/
 
 fs.writeFile('./save.json', JSON.stringify(user), function (err) {
   if (err) throw err;
@@ -52,7 +46,6 @@ res.send(user);
 app.get('/loadSave',(req,res) => {
   fs.readFile('./save.json', 'utf8', (err, data) => {
     if (err) throw err;
-    console.log('Sending JSONString of SavedData');
     res.send(data);
   });
 

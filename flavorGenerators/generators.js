@@ -1,3 +1,5 @@
+/*----------------Generate Faction Start----------*/
+
 function generateFaction() {
 
 var faction = ['Camp ~INTEGER~', 'Camp ~MODIFIER~ ~NAME~',
@@ -33,10 +35,39 @@ var modifier = ['Big','Small','South','North','East','West','Shadow','Sun', 'Moo
 'Wet','Dry','Fire','Dark','Bright','Black','Red','White','Honor','Night','Day'];
 
 var name = ['Shield','Bat','Wolf','Gun','Blade','Legion','Dog','Market','Divine','Warriors','Group'];
+/*----------------Generate Faction End----------*/
+
+
+
+
+
+/*----------------Generate description----------*/
+
+function buildCamp (user){
+
+
+
+
+
+
+
+return user;
+
+}
+/*-----------------Generate Description End----------*/
+
+
+/*----------------Generate SquadMember---------*/
+function generateSquadmember (background){}
+
+
+/*----------------Generate SquadMember End------*/
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
+
+
 
 
 module.exports.generateFaction = generateFaction;
