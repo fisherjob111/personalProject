@@ -22,6 +22,12 @@ app.get('/', (req, res) => {
   }
 );
 
+app.get('/startGame', (req, res) => {
+  //__dirname is the directory in nodeJS, useful for building paths
+  res.sendFile(__dirname + '/ui/startScreen.html');
+  }
+);
+
 
 
 app.get('/createProfile', (req,res) => {
